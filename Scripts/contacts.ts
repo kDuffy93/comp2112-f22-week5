@@ -57,5 +57,9 @@ class Contact {
     return outputString;
   }
 
+  public toJSON(): string {
+    return `${this.FullName}, ${this.ContactNumber}, ${this.EmailAddress}`;
+  }
+
   //pvt methods
 }

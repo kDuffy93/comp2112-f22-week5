@@ -49,5 +49,8 @@ class Contact {
         outputString += `Email Address : ${this.EmailAddress}\n`;
         return outputString;
     }
+    toJSON() {
+        return `${this.FullName}, ${this.ContactNumber}, ${this.EmailAddress}`;
+    }
 }
 //# sourceMappingURL=contacts.js.map
