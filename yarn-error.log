@@ -1,36 +1,66 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js init
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add @fontawesome/fontawesome-free
 
 PATH: 
-  C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\VulkanSDK\1.1.130.0\Bin;C:\Program Files\Oculus\Support\oculus-runtime;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\MinGW\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\CMake\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Tom\AppData\Local\Microsoft\WindowsApps;C:\Users\Tom\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Tom\.dotnet\tools;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Tom\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Tom\AppData\Local\Microsoft\WindowsApps;C:\Users\Tom\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Tom\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\bin;C:\Users\Tom\.dotnet\tools;C:\Users\Tom\AppData\Local\Microsoft\WindowsApps;C:\Users\Tom\AppData\Local\GitHubDesktop\bin;C:\Users\Tom\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\mongosh\;C:\Users\Tom\AppData\Local\gitkraken\bin
+  C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Python310\Scripts\;C:\Python310\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\nssm-2.24\win64;C:\WINDOWS\System32\OpenSSH\;C:\Users\kyled\AppData\Local\Microsoft\WindowsApps;C:\Users\kyled\AppData\Local\atom\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\kyled\AppData\Local\GitHubDesktop\bin;C:\Users\kyled\AppData\Roaming\npm;C:\Use;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\IncrediBuild;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\kyled\AppData\Local\Microsoft\WindowsApps;C:\Users\kyled\AppData\Local\atom\bin;C:\Users\kyled\AppData\Local\GitHubDesktop\bin;C:\Users\kyled\AppData\Local\Microsoft\WindowsApps;C:\nssm-2.24\win64;C:\Program Files\Heroku\bin;C:\Users\kyled\AppData\Roaming\npm;C:\Users\kyled\.dotnet\tools;C:\Users\kyled\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kyled\AppData\Roaming\nvm;C:\Program Files\nodejs
 
 Yarn version: 
   1.22.19
 
 Node version: 
-  18.9.0
+  18.10.0
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (C:\Users\Tom\AppData\Roaming\nvm\v18.9.0\node_modules\yarn\lib\cli.js:137150:13)
-      at Interface.emit (node:events:513:28)
-      at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1124:18)
-      at ReadStream.onkeypress (node:internal/readline/interface:273:20)
-      at ReadStream.emit (node:events:513:28)
-      at emitKeys (node:internal/readline/utils:357:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
-      at ReadStream.emit (node:events:513:28)
-      at addChunk (node:internal/streams/readable:324:12)
+  Error: https://registry.yarnpkg.com/@fontawesome%2ffontawesome-free: Not found
+      at params.callback [as _callback] (C:\Users\kyled\AppData\Roaming\nvm\v18.10.0\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\kyled\AppData\Roaming\nvm\v18.10.0\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\kyled\AppData\Roaming\nvm\v18.10.0\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\kyled\AppData\Roaming\nvm\v18.10.0\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 
 npm manifest: 
-  No manifest
+  {
+    "name": "comp2112-f2022-week2",
+    "version": "1.0.0",
+    "description": "demo app for week 2",
+    "main": "index.js",
+    "repository": "https://github.com/kDuffy93/comp2112.git",
+    "author": "Kyle Duffy <kyleduffy83@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+      "@popperjs/core": "^2.11.6",
+      "bootstrap": "^5.2.1",
+      "jquery": "^3.6.1"
+    }
+  }
 
 yarn manifest: 
   No manifest
 
 Lockfile: 
-  No lockfile
+  # THIS IS AN AUTOGENERATED FILE. DO NOT EDIT THIS FILE DIRECTLY.
+  # yarn lockfile v1
+  
+  
+  "@popperjs/core@^2.11.6":
+    version "2.11.6"
+    resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
+    integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
+  
+  bootstrap@^5.2.1:
+    version "5.2.1"
+    resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.1.tgz#45f97ff05cbe828bad807b014d8425f3aeb8ec3a"
+    integrity sha512-UQi3v2NpVPEi1n35dmRRzBJFlgvWHYwyem6yHhuT6afYF+sziEt46McRbT//kVXZ7b1YUYEVGdXEH74Nx3xzGA==
+  
+  jquery@^3.6.1:
+    version "3.6.1"
+    resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.1.tgz#fab0408f8b45fc19f956205773b62b292c147a16"
+    integrity sha512-opJeO4nCucVnsjiXOE+/PcCgYw9Gwpvs/a6B1LL/lQhwWwpbVEVYDZ1FokFr8PRc7ghYlrFPuyHuiiDNTQxmcw==
