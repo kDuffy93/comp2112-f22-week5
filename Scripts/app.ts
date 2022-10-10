@@ -38,13 +38,21 @@
 
   function LoadHeader(): void {
     $.get("./views/components/header.html", function (html_data) {
+      //change title
       $("header").html(html_data);
-      $("li>a").on("click", function () {
-        let title =$(this).prop("id") as string;
-        document.title =  title.substring(0, 1).toUpperCase() + title.substring(1); 
+        $("li>a#Home").addClass("active");
+
+      $("li>a").on("click", function (event) {
+        event.preventDefault();
+        document.title = $(this).prop("id") as string;
+        //change url
+        history.pushState({}, "", "/" + document.title);
+         $("li>a").each(function () {
+           $(this).removeClass("active");
+         });
+        $("li>a#" + document.title).addClass("active");
         LoadContent();
-      })
-     
+      });
     });
   }
 
@@ -55,50 +63,26 @@
   }
 
   function LoadContent(): void {
-    switch (document.title) {
-      case "Home":
-        $.get("./views/content/home.html", function (html_data) {
-          $("main").html(html_data);
-        });
-        break;
-      case "About":
-        $.get("./views/content/about.html", function (html_data) {
-          $("main").html(html_data);
-        });
 
-        break;
-      case "Projects":
-        $.get("./views/content/projects.html", function (html_data) {
-          $("main").html(html_data);
-        });
+    let contentLink = document.title.toLowerCase();
 
-        break;
-      case "Services":
-        $.get("./views/content/services.html", function (html_data) {
-          $("main").html(html_data);
-        });
 
-        break;
-      case "Contact":
-        $.get("./views/content/contact.html", function (html_data) {
-          $("main").html(html_data);
-        });
 
-        break;
-      default:
-        break;
-    }
+   $.get(`./views/content/${contentLink}.html`, function (html_data) {$("main").html(html_data);});
   }
 
   // First method of using functions
   function Start() {
     console.log("App Started!");
     document.title = "Home";
+    history.pushState({}, "", "/Home");
+     
+
     LoadContent();
     LoadHeader();
-  
 
     LoadFooter();
+
   }
 
   window.addEventListener("load", Start);
