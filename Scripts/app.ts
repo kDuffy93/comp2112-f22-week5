@@ -38,23 +38,29 @@
 
   function LoadHeader(): void {
     $.get("./views/components/header.html", function (html_data) {
-      //vanilla js
-      //document.getElementsByTagName("header")[0].innerHTML = html_data;
-
-      //jquery
+      
       $("header").html(html_data);
+
+
+      switch (document.title) {
+        case "Home":
       $("#homePage").addClass("active");
-
-      //js
-      let elementArray = document.querySelectorAll("li>a.nav-link");
-      for (const element of elementArray as HTMLAnchorElement[]) {
-       console.log(element.href);
+          break;
+          case "About Us":
+      $("#aboutPage").addClass("active");
+          break;
+          case "Our Projects":
+      $("#projectsPage").addClass("active");
+          break;
+          case "Our Services":
+      $("#servicesPage").addClass("active");
+          break;
+          case "Contact Us":
+      $("#contactPage").addClass("active");
+          break;
+        default:
+          break;
       }
-      //jquery
-$("li>a.nav-link").each(function(link){
-console.log($(this).prop("href");
-    });
-
     });
   }
 
