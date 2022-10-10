@@ -33,25 +33,11 @@
     function LoadHeader() {
         $.get("./views/components/header.html", function (html_data) {
             $("header").html(html_data);
-            switch (document.title) {
-                case "Home":
-                    $("#homePage").addClass("active");
-                    break;
-                case "About Us":
-                    $("#aboutPage").addClass("active");
-                    break;
-                case "Our Projects":
-                    $("#projectsPage").addClass("active");
-                    break;
-                case "Our Services":
-                    $("#servicesPage").addClass("active");
-                    break;
-                case "Contact Us":
-                    $("#contactPage").addClass("active");
-                    break;
-                default:
-                    break;
-            }
+            $("li>a").on("click", function () {
+                let title = $(this).prop("id");
+                document.title = title.substring(0, 1).toUpperCase() + title.substring(1);
+                LoadContent();
+            });
         });
     }
     function LoadFooter() {
@@ -59,9 +45,42 @@
             $("footer").html(html_data);
         });
     }
+    function LoadContent() {
+        switch (document.title) {
+            case "Home":
+                $.get("./views/content/home.html", function (html_data) {
+                    $("main").html(html_data);
+                });
+                break;
+            case "About":
+                $.get("./views/content/about.html", function (html_data) {
+                    $("main").html(html_data);
+                });
+                break;
+            case "Projects":
+                $.get("./views/content/projects.html", function (html_data) {
+                    $("main").html(html_data);
+                });
+                break;
+            case "Services":
+                $.get("./views/content/services.html", function (html_data) {
+                    $("main").html(html_data);
+                });
+                break;
+            case "Contact":
+                $.get("./views/content/contact.html", function (html_data) {
+                    $("main").html(html_data);
+                });
+                break;
+            default:
+                break;
+        }
+    }
     // First method of using functions
     function Start() {
         console.log("App Started!");
+        document.title = "Home";
+        LoadContent();
         LoadHeader();
         LoadFooter();
     }
