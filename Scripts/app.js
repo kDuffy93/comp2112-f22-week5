@@ -30,17 +30,34 @@
         }
         return ContactArray;
     }
+    function LoadHeader() {
+        $.get("./views/components/header.html", function (html_data) {
+            //vanilla js
+            //document.getElementsByTagName("header")[0].innerHTML = html_data;
+            //jquery
+            $("header").html(html_data);
+            $("#homePage").addClass("active");
+            //js
+            let elementArray = document.querySelectorAll("li>a.nav-link");
+            for (const element of elementArray) {
+                console.log(element.href);
+            }
+            //jquery
+            $("li>a.nav-link").each(function (link) {
+                console.log($(this).prop("href"));
+            });
+        });
+    }
+    function LoadFooter() {
+        $.get("./views/components/footer.html", function (html_data) {
+            $("footer").html(html_data);
+        });
+    }
     // First method of using functions
     function Start() {
         console.log("App Started!");
-        $.getJSON("./Data/contacts.json", function (DataSource) {
-            let contactList = DataSource.ContactList;
-            saveContactListData(contactList);
-            let contactArray = loadContactListData();
-            for (const contact of contactArray) {
-                console.log(contact.toString());
-            }
-        });
+        LoadHeader();
+        LoadFooter();
     }
     window.addEventListener("load", Start);
 })();
