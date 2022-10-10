@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "ICE3",
     "main": "index.js",
-    "repository": "https://github.com/kDuffy93/comp2112-f22-week4.git",
+    "repository": "https://github.com/kDuffy93/comp2112-f22-week5.git",
     "author": "Kyle Duffy <kyleduffy83@gmail.com>",
     "license": "MIT",
     "dependencies": {
